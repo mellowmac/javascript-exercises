@@ -283,11 +283,156 @@ function fibonacci(num) {
 
 }
 console.log(fibonacci(4));
+
+
+
+let sum = 0;
+
+while (true) {
+
+let value = +prompt(" Please enter a value an click ok!")
+
+if (!value) break;
+
+sum += value;
+
+}
+console.log(sum);
+
+
+ function oddNumber(num) {
+    let result = [];
+    for (let i = 0; i < num; i++) {
+        if (i % 2 !== 0) continue;
+        result.push(i);
+        console.log(result);
+    }
+    return result;
+};
+
+const resultOddNumbers = oddNumber(23);
+
+console.log(resultOddNumbers);
+
+
+const evenNumber = [2,4,6,8,10,12,14,16,18,20];
+
+const modNumber = evenNumber.map((number) => number - 5);
+
+console.log(modNumber)
+
 */
 
-const getTheTitles = function() {
+/* with declared function
+function evenNumber(num){
+    return num % 2 === 0;
+}
+//without declared function
 
+const arr = [2,3,6,3,56,23,45,444,21,77]
+
+const filteredNumber = arr.filter((number) =>  number % 2 === 0);
+
+console.log(arr);
+console.log(filteredNumber);
+*/
+
+/*
+const arr = [1,2,3,4];
+
+const prodAllValue = arr.reduce((total, curentValue) => { return total * curentValue});
+
+console.log(prodAllValue);
+*/
+
+/*
+function camelize(string) {
+     const s1 = string.split('-').map((word, index) => index === 0 ? word : word[0].toUpperCase() + word.slice(1)).join('');
+        return s1
+}
+
+
+
+const convString = camelize("list-style-image");
+console.log(convString);
+
+
+
+function filterRange(n1, n2){ // Filter Range
+        let arr = [1,7,54,9,23,11,28,56,16,34,19];
+        console.log(arr)
+        const filterOut = arr.filter(number =>  (n1 <= number && number <= n2));
+        return filterOut;
+
+
+}
+const fRes = filterRange(7, 16);
+
+console.log(fRes) //[7, 9, 11, 16]
+
+
+function filterRangeInPlace(n1, n2){ // Filter Range In Place
+        let arr = [1,7,54,9,23,11,28,56,16,34,19];
+        console.log(arr)
+        const filterOut = arr.filter(number =>  (number > n1 && number > n2));
+        return filterOut;
+
+
+}
+const fResIP = filterRangeInPlace(7, 16);
+
+console.log(fResIP) // [54, 23, 28, 56, 34, 19]
+
+
+let arr = [40, 100, 1, 5, 25, 10];
+
+const reverseArr = arr.sort((a, b) => b - a)
+
+console.log(reverseArr); // [100, 40, 25, 10, 5, 1]
+
+
+let arr = ["HTML", "JavaScript", "CSS"];
+
+let sorted = (arr).toSorted();
+
+console.log( sorted ); // CSS, HTML, JavaScript
+console.log( arr ); // HTML, JavaScript, CSS (no changes)
+
+
+
+
+ const shuffle = function (array) {
+   
+   const shffldArray = array.sort((array) => 0.5 - Math.random());
+   return shffldArray;
+}; 
+
+console.log(shuffle([1,2,3]));
+// arr = [3, 2, 1]
+
+console.log(shuffle([1,2,3]));
+// arr = [2, 1, 3]
+
+console.log(shuffle([1,2,3]));
+// arr = [3, 1, 2]
+
+*/
+/*
+function unique(arr) {
+
+    arr = ["Hare", "Krishna", "Hare", "Krishna",
+    "Krishna", "Krishna", "Hare", "Hare", ":-O"];
     
+    const clonedArr = arr.filter((word,index) => arr.indexOf(word) === index)
+    
+return clonedArr;
+
+}
+
+console.log(unique()); // Hare, Krishna, :-O
+*/
 
 
-};
+// selects the #container div (don't worry about the syntax, we'll get there)
+const container = document.querySelector("#container");
+
