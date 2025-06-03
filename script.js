@@ -431,8 +431,55 @@ return clonedArr;
 
 console.log(unique()); // Hare, Krishna, :-O
 */
-
-
-// selects the #container div (don't worry about the syntax, we'll get there)
+/*
 const container = document.querySelector("#container");
+const content1 = document.createElement("div");
+const content2 = document.createElement("div");
+const p = document.createElement("p");
+const h1 = document.createElement("h1");
+const h3 = document.createElement("h3");
 
+//first div
+content1.classList.add("content1");
+content1.textContent = "This is the glorious text-content!";
+container.appendChild(content1);
+
+p.classList.add("p");
+p.textContent = "Hey I am very red!!";
+container.appendChild(p);
+
+h3.classList.add("h3");
+h3.textContent = "I am a blue!!";
+container.appendChild(h3);
+
+//2nd div
+content2.classList.add("content2");
+content2.textContent = "This is the second glorious text-content!";
+container.appendChild(content2);
+
+h1.classList.add("h1");
+h1.textContent = "I am in a div";
+content2.appendChild(h1);
+
+p.classList.add("p");
+p.textContent = "ME TOO!!";
+content2.appendChild(p);
+
+p.style.color = "red";
+h3.style.color = "blue";
+
+content1.style.backgroundColor = "pink";
+*/
+
+
+
+// buttons is a node list. It looks and acts much like an array.
+const buttons = document.querySelectorAll("button");
+
+// we use the .forEach method to iterate through each button
+buttons.forEach((button) => {
+    // and for each one we add a 'click' listener
+    button.addEventListener("click", () => {
+        console.log(button.id);
+    });
+});
