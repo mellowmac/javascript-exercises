@@ -469,7 +469,7 @@ p.style.color = "red";
 h3.style.color = "blue";
 
 content1.style.backgroundColor = "pink";
-*/
+
 
 
 
@@ -483,3 +483,46 @@ buttons.forEach((button) => {
         console.log(button.id);
     });
 });
+*/
+
+/*
+const link = document.querySelector("a");
+        link.textContent = "Mozilla Developper Network";
+        link.href = "https://developer.mozilla.org";
+        const sect = document.querySelector("section");
+        const para = document.createElement("p");
+        para.textContent = "We hope you enjoyed the ride";
+        sect.appendChild(para);
+        const text = document.createTextNode(" _ the premier source for web development knowledge.");
+        const linkPara = document.querySelector("p");
+        linkPara.appendChild(text);
+        para.setAttribute("class", "highlight");
+
+
+let user = {
+  name: "John",
+  age: 30,
+  isAdmin: true
+};
+
+for (let key in user) {
+  // keys
+  console.log( key );  // name, age, isAdmin
+  // values for the keys
+  console.log( user[key] ); // John, 30, true
+}
+
+
+
+let codes = {
+  "49": "Germany",
+  "41": "Switzerland",
+  "44": "Great Britain",
+  // ..,
+  "1": "USA"
+};
+
+for (let code in codes) {
+  console.log(code); // 1, 41, 44, 49
+}
+  */
